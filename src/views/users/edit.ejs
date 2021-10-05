@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <h1>Edit</h1>
+    <form
+    method="POST"
+    action="/edit-user/<%= data.id %> "
+    enctype="application/x-www-form-urlencoded">
+        <input type="text" name="name" value="<%= data.name %>"/>
+        <input type="text" name="email" value="<%= data.email %>"/>
+        <input type="text" name="address" value="<%= data.address %>"/>
+        <button type="submit">Edit User</button>
+    </form> -->
+
+    <div class="container">
+        <div class="py-5 text-center">
+          <h1 >Edit User</h1>
+          <form
+          class="form-floating mt-4"
+          id="form"
+          method="POST"
+          action="/insert-user"
+          enctype="application/x-www-form-urlencoded">
+  
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="name" value="<%= data.name %>" placeholder="name">
+            <label for="floatingInput">Name</label>
+          </div>
+  
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" name="email" value="<%= data.email %>" placeholder="name@example.com">
+            <label for="floatingInput">Email</label>
+          </div>
+  
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="address" value="<%= data.address %>" placeholder="name@example.com">
+            <label for="floatingInput">Address</label>
+          </div>
+          
+          <button class="btn btn-outline-primary" type="submit">Edit User</button>
+          
+              
+        </form>
+      </div>
+    </div>
+
+</body>
+</html>
